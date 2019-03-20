@@ -57,4 +57,49 @@ public class RomanTest {
     public void testIXshouldBe9() {
         assertEquals(9,Roman.romanToArabicString("IX"));
     }
+
+    @Test
+    public void testIIIIshouldBeFalse() {
+        assertEquals(-1,Roman.romanToArabicString("IIII"));
+    }
+
+    @Test
+    public void testVIIIIshouldBeFalse() {
+        assertEquals(-1,Roman.romanToArabicString("VIIII"));
+    }
+
+    @Test
+    public void testVVIIIshouldBeFalse() {
+        assertEquals(-1,Roman.romanToArabicString("VVIII"));
+    }
+
+    @Test
+    public void testXXXXshouldBeFalse() {
+        assertEquals(-1,Roman.romanToArabicString("XXXX"));
+    }
+
+    @Test
+    public void testXCshouldBeFalse() {
+        assertEquals(90,Roman.romanToArabicString("XC"));
+    }
+
+    @Test
+    public void testCCshouldBeFalse() {
+        assertEquals(200,Roman.romanToArabicString("CC"));
+    }
+
+    @Test
+    public void testLXXXIIIshouldBeFalse() {
+        assertEquals(83,Roman.romanToArabicString("LXXXIII"));
+    }
+
+    @Test
+    public void testLXXXIVshouldBeFalse() {
+        assertEquals(84,Roman.romanToArabicString("LXXXIV"));
+    }
+
+    @Test
+    public void testLXXXIIshouldBeFalse() {
+        assertEquals(82,Roman.romanToArabicString("LXXXII"));
+    }
 }
