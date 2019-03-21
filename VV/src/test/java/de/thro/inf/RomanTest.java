@@ -102,4 +102,9 @@ public class RomanTest {
     public void testLXXXIIshouldBeFalse() {
         assertEquals(82,Roman.romanToArabicString("LXXXII"));
     }
+
+    @Test
+    public void testVXshouldBeFalse() {
+        assertEquals(-1,Roman.romanToArabicString("VX"));
+    }
 }
