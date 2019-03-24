@@ -107,4 +107,44 @@ public class RomanTest {
     public void testVXshouldBeFalse() {
         assertEquals(-1,Roman.romanToArabicString("VX"));
     }
+
+    @Test
+    public void testLCshouldBeFalse() {
+        assertEquals(-1,Roman.romanToArabicString("LC"));
+    }
+
+    @Test
+    public void testCCCVXshouldBeFalse() {
+        assertEquals(-1,Roman.romanToArabicString("CCCVX"));
+    }
+
+    @Test
+    public void testCCCVXIIshouldBeFalse() {
+        assertEquals(-1,Roman.romanToArabicString("CCCVXII"));
+    }
+
+    @Test
+    public void testVIshouldBe6() {
+        assertEquals(6,Roman.romanToArabicString("VI"));
+    }
+
+    @Test
+    public void testVIshouldBe4() {
+        assertEquals(4,Roman.romanToArabicString("IV"));
+    }
+
+    @Test
+    public void testVVshouldBeFalse() {
+        assertEquals(-1,Roman.romanToArabicString("VV"));
+    }
+
+    @Test
+    public void testLLshouldBeFalse() {
+        assertEquals(-1,Roman.romanToArabicString("LL"));
+    }
+
+    @Test
+    public void testVCshouldBe95() {
+        assertEquals(95,Roman.romanToArabicString("VC"));
+    }
 }
